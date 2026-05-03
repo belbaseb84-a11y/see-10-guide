@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>MCQ Practice — see2083</title>
+  <meta name="description" content="Practice SEE Grade 10 MCQ questions with instant feedback and explanations." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/premium.css" />
+</head>
+
+<body>
+
+<nav class="navbar" id="navbar" aria-label="Site navigation"></nav>
+
+<main class="page-main">
+
+  <section class="practice-page">
+    <div class="container">
+
+      <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
+
+      <div class="practice-page-head">
+        <div>
+          <div class="practice-kicker" id="practice-kicker">Practice</div>
+          <h1 id="quiz-page-title">MCQ Practice</h1>
+          <p id="quiz-page-sub">
+            Answer each question, get instant feedback, and learn with explanations.
+          </p>
+        </div>
+
+        <a href="subjects.html" class="btn btn-outline btn-sm" id="back-link">
+          Browse subjects
+        </a>
+      </div>
+
+      <div class="practice-layout">
+
+        <aside class="practice-sidebar">
+          <div class="practice-sidebar-card">
+            <h2 id="selector-label">Choose subject</h2>
+            <p id="selector-subtitle">Filter questions by subject.</p>
+
+            <div class="practice-filter-list" id="subject-filter-btns"></div>
+          </div>
+
+          <div class="practice-sidebar-card compact">
+            <h3 id="practice-info-title">Practice info</h3>
+            <div class="practice-info-list" id="practice-info-list"></div>
+          </div>
+        </aside>
+
+        <section class="practice-main">
+          <div class="quiz-card practice-card" id="quiz-container">
+            <p class="practice-loading">Loading questions...</p>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" id="footer"></footer>
+<nav class="bottom-nav" id="bottom-nav" aria-label="Mobile navigation"></nav>
+
+<script src="js/data.js"></script>
+<script src="js/data-official-patch.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/language.js"></script>
+<script src="js/bookmarks.js"></script>
+<script src="js/main.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/quiz-page.js"></script>
+
+</body>
+</html>

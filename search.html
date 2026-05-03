@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Search — see2083</title>
+  <meta name="description" content="Search SEE Grade 10 subjects, chapters, MCQs, and study materials on see2083." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/premium.css" />
+</head>
+
+<body>
+
+<nav class="navbar" id="navbar" aria-label="Site navigation"></nav>
+
+<main class="page-main">
+
+  <section class="search-page">
+    <div class="container">
+
+      <div class="search-page-head">
+        <div>
+          <div class="search-kicker" id="search-kicker">Search</div>
+          <h1 id="search-title">Find what you need.</h1>
+          <p id="search-sub">
+            Search subjects, chapters, MCQs, and study sections in English or Nepali.
+          </p>
+        </div>
+
+        <a href="medium.html" class="btn btn-outline btn-sm" id="search-start-link">
+          Start learning
+        </a>
+      </div>
+
+      <div class="search-panel">
+
+        <div class="search-box search-page-box">
+          <span class="search-icon">🔍</span>
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search subjects, chapters..."
+            autocomplete="off"
+            aria-label="Search subjects and chapters"
+          />
+        </div>
+
+        <div class="search-filter-row">
+          <div class="tabs search-tabs" id="type-filter" role="group" aria-label="Search filter">
+            <button class="tab-btn active" data-type="all" id="tf-all">All</button>
+            <button class="tab-btn" data-type="subject" id="tf-subject">Subjects</button>
+            <button class="tab-btn" data-type="chapter" id="tf-chapter">Chapters</button>
+            <button class="tab-btn" data-type="mcq" id="tf-mcq">MCQ</button>
+          </div>
+
+          <div id="search-status" class="search-status"></div>
+        </div>
+
+        <div id="search-results-list" class="search-results-wrap"></div>
+
+        <div id="initial-state" class="empty-state search-empty-state">
+          <div class="empty-icon">🔍</div>
+          <h3 id="initial-title">Start searching</h3>
+          <p id="initial-text">Type a subject, chapter, or keyword to search.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" id="footer"></footer>
+<nav class="bottom-nav" id="bottom-nav" aria-label="Mobile navigation"></nav>
+
+<script src="js/data.js"></script>
+<script src="js/data-official-patch.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/language.js"></script>
+<script src="js/bookmarks.js"></script>
+<script src="js/main.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/search.js"></script>
+<script src="js/search-page.js"></script>
+
+</body>
+</html>

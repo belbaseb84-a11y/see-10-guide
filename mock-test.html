@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mock Test — see2083</title>
+  <meta name="description" content="Take a timed SEE Grade 10 mock test with question navigation and result review." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/premium.css" />
+</head>
+
+<body>
+
+<nav class="navbar" id="navbar" aria-label="Site navigation"></nav>
+
+<main class="page-main">
+
+  <section class="mock-page">
+    <div class="container">
+
+      <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
+
+      <!-- Start screen -->
+      <div id="start-screen">
+
+        <div class="mock-page-head">
+          <div>
+            <div class="mock-kicker" id="mock-kicker">Timed practice</div>
+            <h1 id="mock-title">Chapter Mock Test</h1>
+            <p id="mock-subtitle">Practice with a timed test and check your result after submit.</p>
+          </div>
+
+          <a href="subjects.html" class="btn btn-outline btn-sm" id="mock-back-link">
+            Browse subjects
+          </a>
+        </div>
+
+        <div class="mock-start-grid">
+
+          <div class="mock-start-card">
+            <h2 id="instructions-title">Instructions</h2>
+            <p id="instructions-subtitle">Read this before starting the test.</p>
+
+            <ul class="mock-instruction-list" id="instructions-list"></ul>
+
+            <button class="btn btn-primary btn-lg" id="start-btn" type="button">
+              🎯 <span id="start-btn-label">Start Test</span>
+            </button>
+          </div>
+
+          <aside class="mock-summary-card">
+            <h2 id="summary-title">Test summary</h2>
+
+            <div class="mock-summary-grid">
+              <div>
+                <span id="q-count-label">Questions</span>
+                <strong id="q-count">0</strong>
+              </div>
+
+              <div>
+                <span id="time-label">Time limit</span>
+                <strong id="time-limit">15 min</strong>
+              </div>
+
+              <div>
+                <span id="mode-label">Mode</span>
+                <strong id="mode-value">Mock</strong>
+              </div>
+            </div>
+
+            <div class="mock-summary-note" id="summary-note">
+              Correct and wrong answers are shown only after you submit.
+            </div>
+          </aside>
+
+        </div>
+
+      </div>
+
+      <!-- Test screen -->
+      <div id="test-screen" style="display:none">
+
+        <div class="mock-live-head">
+          <div>
+            <div class="mock-kicker" id="live-kicker">Test running</div>
+            <h1 id="live-title">Mock Test</h1>
+            <p id="live-subtitle">Answer all questions before the timer ends.</p>
+          </div>
+
+          <div class="timer-display mock-live-timer" id="timer-wrap">
+            ⏱ <span id="mock-timer">15:00</span>
+          </div>
+        </div>
+
+        <div class="mock-test-layout">
+          <section class="mock-question-card">
+            <div id="mock-question-area"></div>
+          </section>
+
+          <aside class="mock-sidebar">
+            <div class="mock-sidebar-card">
+              <div id="mock-nav-panel"></div>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" id="footer"></footer>
+<nav class="bottom-nav" id="bottom-nav" aria-label="Mobile navigation"></nav>
+
+<script src="js/data.js"></script>
+<script src="js/data-official-patch.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/language.js"></script>
+<script src="js/bookmarks.js"></script>
+<script src="js/main.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/mock-test.js"></script>
+<script src="js/mock-page.js"></script>
+
+</body>
+</html>
