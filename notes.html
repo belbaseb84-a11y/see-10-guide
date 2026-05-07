@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Chapters — see2083</title>
-  <meta name="description" content="View SEE Grade 10 chapters by subject and start studying notes, MCQs, mock tests, and past questions." />
+  <title>Study Material - see2083</title>
+  <meta name="description" content="Open SEE Grade 10 chapter notes, slides, questions, MCQ practice, and mock tests." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,49 +26,39 @@
 
 <main class="page-main">
 
-  <section class="chapters-page">
+  <section class="notes-page">
     <div class="container">
 
       <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
 
-      <div class="chapters-page-head">
-        <div class="chapters-subject-icon" id="subject-icon" aria-hidden="true">📚</div>
-
-        <div class="chapters-head-content">
-          <div class="chapters-kicker" id="chapters-kicker">Subject chapters</div>
-
-          <h1 id="subject-title">Chapters</h1>
-
-          <p id="subject-desc">
-            Choose a chapter to view study options, notes, MCQs, and practice sections.
-          </p>
-
-          <div class="chapters-meta-row" id="chapters-meta-row"></div>
-        </div>
-
-        <div class="chapters-head-actions">
-          <a href="subjects.html" class="btn btn-outline btn-sm" id="back-subjects-btn">
-            ← Subjects
-          </a>
-        </div>
-      </div>
-
-      <div class="chapters-toolbar">
+      <div class="notes-page-head">
         <div>
-          <h2 id="chapter-list-title">Chapter list</h2>
-          <p id="chapter-list-subtitle">Open a chapter to start studying.</p>
+          <div class="notes-kicker" id="notes-kicker">Study Material</div>
+          <h1 id="notes-title">Study Material</h1>
+          <p id="notes-subtitle">No content added in this section yet.</p>
         </div>
 
-        <div class="chapters-count" id="chapters-count"></div>
+        <a href="chapter.html" class="btn btn-outline btn-sm" id="back-chapter-btn">Back to Chapter</a>
       </div>
 
-      <div id="chapters-grid" class="chapters-page-grid"></div>
+      <div class="notes-layout">
+        <aside class="notes-sidebar">
+          <div class="notes-sidebar-card">
+            <h2 id="tabs-title">Study sections</h2>
+            <p id="tabs-subtitle">Choose a material type.</p>
+            <div class="notes-tab-list" id="type-tabs" role="tablist"></div>
+          </div>
+        </aside>
 
-      <div id="no-chapters" class="empty-state" style="display:none">
-        <div class="empty-icon">📚</div>
-        <h3 id="no-chapters-title">Chapters are being prepared</h3>
-        <p id="no-ch-text">Chapters for this subject are being prepared. Check back soon.</p>
-        <a href="subjects.html" class="btn btn-primary" id="no-chapters-btn">Back to subjects</a>
+        <section class="notes-reader" id="notes-content-area">
+          <article class="notes-content notes-reader-card">
+            <div class="empty-state">
+              <div class="empty-icon">📚</div>
+              <h3>No content added in this section yet.</h3>
+              <p>No content added in this section yet.</p>
+            </div>
+          </article>
+        </section>
       </div>
 
     </div>
@@ -86,7 +76,7 @@
 <script src="js/bookmarks.js"></script>
 <script src="js/main.js"></script>
 <script src="js/utils.js"></script>
-<script src="js/chapters.js"></script>
+<script src="js/notes.js"></script>
 
 </body>
 </html>

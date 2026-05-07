@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Design System — see2083</title>
+  <title>Developer UI Reference - see2083</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -23,8 +23,8 @@
 <div class="container section-sm" style="max-width:900px">
 
   <div class="page-header">
-    <h1>Design System</h1>
-    <p>see2083 UI component reference.</p>
+    <h1>Developer UI Reference</h1>
+    <p>Internal component reference for see2083 development.</p>
   </div>
 
   <!-- Colors -->
@@ -97,21 +97,21 @@
     <div class="ds-section-title">Subject Card</div>
     <div class="grid-auto-md">
       <div class="card subject-card">
-        <div class="subject-card-icon">🔬</div>
-        <div class="subject-card-meta">19 units · Compulsory</div>
+        <div class="subject-card-icon">ðŸ”¬</div>
+        <div class="subject-card-meta">19 units Â· Compulsory</div>
         <div class="subject-card-title">Science and Technology</div>
         <div class="subject-card-desc">19 units covering biology, physics, chemistry, and ICT.</div>
         <div class="subject-card-footer">
-          <span class="btn btn-outline btn-sm" style="pointer-events:none">View Chapters →</span>
+          <span class="btn btn-outline btn-sm" style="pointer-events:none">View Chapters â†’</span>
         </div>
       </div>
       <div class="card subject-card">
-        <div class="subject-card-icon">📐</div>
-        <div class="subject-card-meta">18 units · Compulsory</div>
+        <div class="subject-card-icon">ðŸ“</div>
+        <div class="subject-card-meta">18 units Â· Compulsory</div>
         <div class="subject-card-title">Compulsory Mathematics</div>
         <div class="subject-card-desc">18 chapters covering arithmetic, algebra, geometry, and statistics.</div>
         <div class="subject-card-footer">
-          <span class="btn btn-outline btn-sm" style="pointer-events:none">View Chapters →</span>
+          <span class="btn btn-outline btn-sm" style="pointer-events:none">View Chapters â†’</span>
         </div>
       </div>
     </div>
@@ -143,20 +143,20 @@
     <div class="ds-section-title">Study Option Cards</div>
     <div style="display:flex;flex-direction:column;gap:var(--sp-3);max-width:480px">
       <div class="study-option-card">
-        <div class="study-option-icon">✅</div>
+        <div class="study-option-icon">âœ…</div>
         <div class="study-option-info">
           <div class="study-option-title">MCQ Practice</div>
           <div class="study-option-desc">Practice multiple-choice questions with instant feedback.</div>
         </div>
-        <span class="btn btn-primary btn-sm" style="pointer-events:none">Start →</span>
+        <span class="btn btn-primary btn-sm" style="pointer-events:none">Start â†’</span>
       </div>
       <div class="study-option-card">
-        <div class="study-option-icon">📝</div>
+        <div class="study-option-icon">ðŸ“</div>
         <div class="study-option-info">
           <div class="study-option-title">Easy Note</div>
-          <div class="study-option-desc">Simplified summary notes for quick revision.</div>
+          <div class="study-option-desc">Simplified summary notes for focused revision.</div>
         </div>
-        <span class="btn btn-ghost btn-sm" style="pointer-events:none">Open →</span>
+        <span class="btn btn-ghost btn-sm" style="pointer-events:none">Open â†’</span>
       </div>
     </div>
   </div>
@@ -167,21 +167,21 @@
     <div class="ds-preview-box" style="display:flex;flex-direction:column;gap:var(--sp-3)">
       <button class="mcq-option" disabled>
         <span class="mcq-letter">A</span>
-        <span>Default — unselected option</span>
+        <span>Default â€” unselected option</span>
       </button>
       <button class="mcq-option correct" disabled>
         <span class="mcq-letter">B</span>
-        <span>Correct — this was the right answer</span>
+        <span>Correct â€” this was the right answer</span>
       </button>
       <button class="mcq-option selected-wrong" disabled>
         <span class="mcq-letter">C</span>
-        <span>Wrong — this was selected but incorrect</span>
+        <span>Wrong â€” this was selected but incorrect</span>
       </button>
       <div class="mcq-feedback correct-fb">
-        <strong>✓ Correct!</strong>A hypothesis is a testable prediction or educated guess made to explain an observation.
+        <strong>âœ“ Correct!</strong>A hypothesis is a testable prediction or educated guess made to explain an observation.
       </div>
       <div class="mcq-feedback wrong-fb">
-        <strong>✗ Wrong</strong>The correct answer was B. A hypothesis must be testable, not just a guess.
+        <strong>âœ— Wrong</strong>The correct answer was B. A hypothesis must be testable, not just a guess.
       </div>
     </div>
   </div>
@@ -200,8 +200,8 @@
   <div style="margin-bottom:var(--sp-10)">
     <div class="ds-section-title">Timer Display</div>
     <div class="ds-preview-box ds-row">
-      <div class="timer-display">⏱ 14:38</div>
-      <div class="timer-display warning">⏱ 00:45</div>
+      <div class="timer-display">â± 14:38</div>
+      <div class="timer-display warning">â± 00:45</div>
     </div>
   </div>
 
@@ -210,8 +210,8 @@
     <div class="ds-section-title">Search Bar</div>
     <div class="ds-preview-box" style="max-width:480px">
       <div class="search-box">
-        <span class="search-icon">🔍</span>
-        <input type="text" placeholder="Search subjects, chapters..." />
+        <span class="search-icon">ðŸ”</span>
+        <input type="text" aria-label="Search subjects or chapters" />
       </div>
     </div>
   </div>
@@ -220,8 +220,8 @@
   <div style="margin-bottom:var(--sp-10)">
     <div class="ds-section-title">Bookmark Button</div>
     <div class="ds-preview-box ds-row">
-      <button class="bookmark-btn">🔖 Save Chapter</button>
-      <button class="bookmark-btn bookmarked">🔖 Saved</button>
+      <button class="bookmark-btn">ðŸ”– Save Chapter</button>
+      <button class="bookmark-btn bookmarked">ðŸ”– Saved</button>
     </div>
   </div>
 
@@ -243,11 +243,11 @@
   <div style="margin-bottom:var(--sp-10)">
     <div class="ds-section-title">Typography</div>
     <div class="ds-preview-box">
-      <h1 style="margin-bottom:var(--sp-2)">Heading 1 — Inter Bold</h1>
-      <h2 style="margin-bottom:var(--sp-2)">Heading 2 — Inter Bold</h2>
-      <h3 style="margin-bottom:var(--sp-2)">Heading 3 — Inter Bold</h3>
-      <p style="margin-bottom:var(--sp-2)">Body text — 16px Inter Regular. Used for descriptions and general content.</p>
-      <p class="lang-np" style="font-family:var(--font-np);line-height:1.7;color:var(--text-secondary)">नेपाली पाठ — Noto Sans Devanagari। SEE परीक्षाको तयारीका लागि नेपाली माध्यमका विद्यार्थीहरूका लागि।</p>
+      <h1 style="margin-bottom:var(--sp-2)">Heading 1 â€” Inter Bold</h1>
+      <h2 style="margin-bottom:var(--sp-2)">Heading 2 â€” Inter Bold</h2>
+      <h3 style="margin-bottom:var(--sp-2)">Heading 3 â€” Inter Bold</h3>
+      <p style="margin-bottom:var(--sp-2)">Body text â€” 16px Inter Regular. Used for descriptions and general content.</p>
+      <p class="lang-np" style="font-family:var(--font-np);line-height:1.7;color:var(--text-secondary)">à¤¨à¥‡à¤ªà¤¾à¤²à¥€ à¤ªà¤¾à¤  â€” Noto Sans Devanagarià¥¤ SEE à¤ªà¤°à¥€à¤•à¥à¤·à¤¾à¤•à¥‹ à¤¤à¤¯à¤¾à¤°à¥€à¤•à¤¾ à¤²à¤¾à¤—à¤¿ à¤¨à¥‡à¤ªà¤¾à¤²à¥€ à¤®à¤¾à¤§à¥à¤¯à¤®à¤•à¤¾ à¤µà¤¿à¤¦à¥à¤¯à¤¾à¤°à¥à¤¥à¥€à¤¹à¤°à¥‚à¤•à¤¾ à¤²à¤¾à¤—à¤¿à¥¤</p>
     </div>
   </div>
 
@@ -257,16 +257,16 @@
     <div class="ds-preview-box">
       <div style="display:flex;background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-lg);overflow:hidden;max-width:360px">
         <div style="flex:1;display:flex;flex-direction:column;align-items:center;padding:12px 8px;gap:4px;color:var(--color-primary)">
-          <span style="font-size:20px">🏠</span><span style="font-size:10px;font-weight:600">Home</span>
+          <span style="font-size:20px">ðŸ </span><span style="font-size:10px;font-weight:600">Home</span>
         </div>
         <div style="flex:1;display:flex;flex-direction:column;align-items:center;padding:12px 8px;gap:4px;color:var(--text-muted)">
-          <span style="font-size:20px">📚</span><span style="font-size:10px">Subjects</span>
+          <span style="font-size:20px">ðŸ“š</span><span style="font-size:10px">Subjects</span>
         </div>
         <div style="flex:1;display:flex;flex-direction:column;align-items:center;padding:12px 8px;gap:4px;color:var(--text-muted)">
-          <span style="font-size:20px">🔍</span><span style="font-size:10px">Search</span>
+          <span style="font-size:20px">ðŸ”</span><span style="font-size:10px">Search</span>
         </div>
         <div style="flex:1;display:flex;flex-direction:column;align-items:center;padding:12px 8px;gap:4px;color:var(--text-muted)">
-          <span style="font-size:20px">🔖</span><span style="font-size:10px">Bookmarks</span>
+          <span style="font-size:20px">ðŸ”–</span><span style="font-size:10px">Bookmarks</span>
         </div>
       </div>
     </div>
@@ -289,3 +289,4 @@ pageInit("about");
 </script>
 </body>
 </html>
+
